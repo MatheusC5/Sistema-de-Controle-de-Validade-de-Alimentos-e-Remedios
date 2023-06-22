@@ -1,0 +1,67 @@
+Configurações DataGridView
+
+Idosos:
+CasaDeApoioNossoLarDataSetIdosos
+NotSortable
+
+150 - Código do Idoso
+430 - Nome
+100 - Data de Nascimento
+430 - Endereco do Responsável
+100 - Telefone do Responsável
+100 - Celular do Responsável
+100 - Telefone de Emergência
+
+Alimentos:
+CasaDeApoioNossoLarDataSetAlimentos
+NotSortable
+
+150 - Código do Alimento
+355 - Nome
+355 - Marca
+150 - Unidade
+100 - Validade
+150 - Estoque
+150 - Peso
+
+Remédios:
+CasaDeApoioNossoLarDataSetRemedios
+NotSortable
+
+150 - Código do Remédio
+355 - Nome
+355 - Marca
+150 - Unidade
+100 - Validade
+150 - Estoque
+150 - Peso
+
+Prontuários:
+CasaDeApoioNossoLarDataSetProntuarios
+NotSortable
+
+120 - Código do Prontuário
+300 - Idosos
+300 - Enfermidades
+300 - Alimentos
+300 - Remédios
+100 - Data de Criação
+100 - Data de Uso
+400 - Prescrição ou Observações
+110 - Código do Idoso
+110 - Código do Alimento
+110 - Código do Remédio
+
+Atualizar Estoque Alimentos:
+CasaDeApoioNossoLarDataSetAtualizarEstoqueAlimentos
+NotSortable
+
+170 - Estoque disponível do Alimento
+139 - Tipo de Peso do Alimento
+
+Atualizar Estoque Remédios:
+CasaDeApoioNossoLarDataSetAtualizarEstoqueRemedios
+NotSortable
+
+170 - Estoque disponível do Remédio
+139 - Tipo de Peso do Remédio

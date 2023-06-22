@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F9B12436-0334-4690-8A03-94E6ACC57B34}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TCC_CasaDeApoio</RootNamespace>
+    <AssemblyName>TCC_CasaDeApoio</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackupDados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackupDados.Designer.cs">
+      <DependentUpon>BackupDados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CasaDeApoioNossoLarDataSetAlimentos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CasaDeApoioNossoLarDataSetAlimentos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CasaDeApoioNossoLarDataSetAtualizarEstoqueAlimentos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CasaDeApoioNossoLarDataSetAtualizarEstoqueAlimentos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CasaDeApoioNossoLarDataSetAtualizarEstoqueRemedios.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CasaDeApoioNossoLarDataSetAtualizarEstoqueRemedios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CasaDeApoioNossoLarDataSetIdosos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CasaDeApoioNossoLarDataSetIdosos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CasaDeApoioNossoLarDataSetProntuarios.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CasaDeApoioNossoLarDataSetProntuarios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CasaDeApoioNossoLarDataSetRemedios.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CasaDeApoioNossoLarDataSetRemedios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registrar\RegistrarAlimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrar\RegistrarAlimento.Designer.cs">
+      <DependentUpon>RegistrarAlimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registrar\RegistrarAtualizacao_Estoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrar\RegistrarAtualizacao_Estoque.Designer.cs">
+      <DependentUpon>RegistrarAtualizacao_Estoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registrar\RegistrarIdoso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrar\RegistrarIdoso.Designer.cs">
+      <DependentUpon>RegistrarIdoso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registrar\RegistrarProntuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrar\RegistrarProntuario.Designer.cs">
+      <DependentUpon>RegistrarProntuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registrar\RegistrarRemedio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrar\RegistrarRemedio.Designer.cs">
+      <DependentUpon>RegistrarRemedio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualizar\VisualizarAlimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualizar\VisualizarAlimento.Designer.cs">
+      <DependentUpon>VisualizarAlimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualizar\VisualizarProntuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualizar\VisualizarProntuario.Designer.cs">
+      <DependentUpon>VisualizarProntuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualizar\VisualizarIdoso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualizar\VisualizarIdoso.Designer.cs">
+      <DependentUpon>VisualizarIdoso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualizar\VisualizarRemedio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualizar\VisualizarRemedio.Designer.cs">
+      <DependentUpon>VisualizarRemedio.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BackupDados.resx">
+      <DependentUpon>BackupDados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Registrar\RegistrarAlimento.resx">
+      <DependentUpon>RegistrarAlimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registrar\RegistrarAtualizacao_Estoque.resx">
+      <DependentUpon>RegistrarAtualizacao_Estoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registrar\RegistrarIdoso.resx">
+      <DependentUpon>RegistrarIdoso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registrar\RegistrarProntuario.resx">
+      <DependentUpon>RegistrarProntuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registrar\RegistrarRemedio.resx">
+      <DependentUpon>RegistrarRemedio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualizar\VisualizarAlimento.resx">
+      <DependentUpon>VisualizarAlimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualizar\VisualizarProntuario.resx">
+      <DependentUpon>VisualizarProntuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualizar\VisualizarIdoso.resx">
+      <DependentUpon>VisualizarIdoso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualizar\VisualizarRemedio.resx">
+      <DependentUpon>VisualizarRemedio.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="CasaDeApoioNossoLarDataSetAlimentos.xsc">
+      <DependentUpon>CasaDeApoioNossoLarDataSetAlimentos.xsd</DependentUpon>
+    </None>
+    <None Include="CasaDeApoioNossoLarDataSetAlimentos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CasaDeApoioNossoLarDataSetAlimentos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CasaDeApoioNossoLarDataSetAlimentos.xss">
+      <DependentUpon>CasaDeApoioNossoLarDataSetAlimentos.xsd</DependentUpon>
+    </None>
+    <None Include="CasaDeApoioNossoLarDataSetAtualizarEstoqueAlimentos.xsc">
+      <DependentUpon>CasaDeApoioNossoLarDataSetAtualizarEstoqueAlimentos.xsd</DependentUpon>
+    </None>
+    <None Include="CasaDeApoioNossoLarDataSetAtualizarEstoqueAlimentos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CasaDeApoioNossoLarDataSetAtualizarEstoqueAlimentos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CasaDeApoioNossoLarDataSetAtualizarEstoqueAlimentos.xss">
+      <DependentUpon>CasaDeApoioNossoLarDataSetAtualizarEstoqueAlimentos.xsd</DependentUpon>
+    </None>
+    <None Include="CasaDeApoioNossoLarDataSetAtualizarEstoqueRemedios.xsc">
+      <DependentUpon>CasaDeApoioNossoLarDataSetAtualizarEstoqueRemedios.xsd</DependentUpon>
+    </None>
+    <None Include="CasaDeApoioNossoLarDataSetAtualizarEstoqueRemedios.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CasaDeApoioNossoLarDataSetAtualizarEstoqueRemedios.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CasaDeApoioNossoLarDataSetAtualizarEstoqueRemedios.xss">
+      <DependentUpon>CasaDeApoioNossoLarDataSetAtualizarEstoqueRemedios.xsd</DependentUpon>
+    </None>
+    <None Include="CasaDeApoioNossoLarDataSetIdosos.xsc">
+      <DependentUpon>CasaDeApoioNossoLarDataSetIdosos.xsd</DependentUpon>
+    </None>
+    <None Include="CasaDeApoioNossoLarDataSetIdosos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CasaDeApoioNossoLarDataSetIdosos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CasaDeApoioNossoLarDataSetIdosos.xss">
+      <DependentUpon>CasaDeApoioNossoLarDataSetIdosos.xsd</DependentUpon>
+    </None>
+    <None Include="CasaDeApoioNossoLarDataSetProntuarios.xsc">
+      <DependentUpon>CasaDeApoioNossoLarDataSetProntuarios.xsd</DependentUpon>
+    </None>
+    <None Include="CasaDeApoioNossoLarDataSetProntuarios.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CasaDeApoioNossoLarDataSetProntuarios.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CasaDeApoioNossoLarDataSetProntuarios.xss">
+      <DependentUpon>CasaDeApoioNossoLarDataSetProntuarios.xsd</DependentUpon>
+    </None>
+    <None Include="CasaDeApoioNossoLarDataSetRemedios.xsc">
+      <DependentUpon>CasaDeApoioNossoLarDataSetRemedios.xsd</DependentUpon>
+    </None>
+    <None Include="CasaDeApoioNossoLarDataSetRemedios.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CasaDeApoioNossoLarDataSetRemedios.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CasaDeApoioNossoLarDataSetRemedios.xss">
+      <DependentUpon>CasaDeApoioNossoLarDataSetRemedios.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{2c1deccb-dc8b-4a7d-8db1-9640944bc741}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{db5ff48a-6432-4df7-bfa8-54fe8d8f2006}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modelos\Modelos.csproj">
+      <Project>{7c4d3bf7-ebe8-4b6c-917e-860cf3e36d5b}</Project>
+      <Name>Modelos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WallpapaerCasaDeApoio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bordaPreta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallppaperLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoCACirular.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
